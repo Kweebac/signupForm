@@ -11,6 +11,94 @@
   </head>
 
   <body>
-    <form action="https://httpbin.org/post" method="post"></form>
+    <div class="image-container">
+      <div>
+        <img src="images/temp.png" alt="" />
+        <p>ODIN</p>
+      </div>
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Halie West</a
+        >
+        on
+        <a
+          href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </div>
+    <div class="form-container">
+      <div>
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="form">
+        <p>Let's do this!</p>
+        <form action="https://httpbin.org/post" method="post" id="form">
+          <div class="column">
+            <div>
+              <label for="firstName">FIRST NAME</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                minlength="3"
+                maxlength="20"
+              />
+            </div>
+            <div>
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder=" example@gmail.com"
+              />
+            </div>
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required />
+              <span>* Passwords do not match</span>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <label for="lastName">LAST NAME</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                minlength="3"
+                maxlength="20"
+              />
+            </div>
+            <div>
+              <label for="tel">PHONE NUMBER</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                pattern="07\d{3} ?\d{6}"
+                placeholder=" 07123 456789"
+              />
+            </div>
+            <div>
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input type="password" id="confirmPassword" required />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <button form="form">Create Account</button>
+        <p>Already have an account? <span>Log in</span></p>
+      </div>
+    </div>
   </body>
 </html>
